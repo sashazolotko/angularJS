@@ -1,0 +1,14 @@
+<div class="projects-list">
+    <h1>Projects</h1>
+    <ul>
+        <li ng-repeat="project in projects" ng-class="setClass($index)">
+            <a ui-sref=".tasks_list({projectId: project.id})" ng-click="select($index)"><span>{{project.title}}</span></a>
+            <span ng-show="isSelect($index)" class="remove glyphicon glyphicon-remove" ng-click="remove()"></span>
+        </li>
+    </ul>
+    <a ui-sref=".add">
+        <button class="btn btn-default">
+            <span class="glyphicon glyphicon-plus"></span> Create
+        </button>
+    </a>
+</div>

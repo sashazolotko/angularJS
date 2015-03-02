@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="TasksApp">
+<head>
+  <meta charset="utf-8">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/js/modal.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body>
+    <div class="taskTable">
+        <div ui-view="projects"></div>
+        <div ui-view="tasks"></div>
+        <div ui-view="description"></div>
+        <div ui-view="add"></div>
+        <div ui-view="edit"></div>
+    </div>
+    <script src="js/controllers/editTask.js"></script>
+    <script src="js/controllers/edit.js"></script>
+    <script src="js/controllers/addTask.js"></script>
+    <script src="js/controllers/add.js"></script>
+    <script src="js/controllers/projects.js"></script>
+    <script src="js/controllers/tasks.js"></script>
+    <script src="js/controllers/description.js"></script>
+    <script src="js/directives/edit.js"></script>
+    <script src="js/directives/add.js"></script>    
+    <script src="js/directives/projects.js"></script>
+    <script src="js/directives/tasks.js"></script>
+    <script src="js/directives/description.js"></script>
+</body>
+</html>
